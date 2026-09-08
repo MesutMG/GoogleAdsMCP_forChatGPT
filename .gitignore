@@ -8,6 +8,7 @@ __pycache__/
 dist/
 build/
 .eggs/
+.python-version
 
 # Virtual environments
 .venv/
@@ -26,7 +27,7 @@ ENV/
 .env.local
 
 # Credentials & secrets
-service-account*.json
+service_account.json
 google-ads.yaml
 *.pem
 *.key

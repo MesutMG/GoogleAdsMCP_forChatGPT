@@ -34,6 +34,7 @@ class GoogleAdsSettings(BaseSettings):
         default="",
         description="Email of the Workspace user to impersonate (domain-wide delegation)",
     )
+    
     login_customer_id: str = Field(
         default="",
         description="MCC customer ID (required for MCC-level access)",
@@ -67,4 +68,5 @@ class GoogleAdsSettings(BaseSettings):
 
         if self.login_customer_id:
             config["login_customer_id"] = self.login_customer_id.replace("-", "")
+            
         return config
